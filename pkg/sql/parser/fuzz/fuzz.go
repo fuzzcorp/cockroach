@@ -18,15 +18,14 @@
 package fuzz
 
 import (
-	"github.com/cockroachdb/cockroach/pkg/sql/parser"
 	// See above comment about why this is imported.
 	_ "github.com/cockroachdb/cockroach/pkg/sql/sem/builtins"
 )
 
-func FuzzParse(data []byte) int {
-	_, err := parser.Parse(string(data))
-	if err != nil {
-		return 0
-	}
-	return 1
-}
+// func FuzzParse(data []byte) int {
+// 	_, err := parser.Parse(string(data))
+// 	if err != nil {
+// 		return 0
+// 	}
+// 	return 1
+// }
