@@ -1,0 +1,9 @@
+
+base:
+  language: go
+  docker_image: cockroachdb/builder:20201117-153332
+  checkout: github.com/cockroachdb/cockroach
+  root: pkg
+  deps:
+    - run: make generate
+    - vendor:
