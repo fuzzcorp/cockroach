@@ -5,5 +5,5 @@ base:
   checkout: github.com/cockroachdb/cockroach
   root: pkg
   deps:
-    - run: make generate
+    - run: make -j16 generate
     - vendor:
